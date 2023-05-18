@@ -70,4 +70,17 @@ for i in range(2,num):
 else:
     print(num,"is a prime number")
  
+#9.Write a Python program to count the number of vowels in a given string.
+name = input("Enter the string: ")
+list_string = list(name)
+vowels = ['a','e','i','o','u']
+vowels_count = 0
+
+
+for i in range(len(list_string)):
+    if list_string[i] == vowels[i]:
+        vowels_count[i] = vowels_count[i] + 1
+        print("The total number of vowels in the string are: ",sum(vowels_count))
+    else:
+        print("The string doesnot contain any vowels")
  

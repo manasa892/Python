@@ -58,5 +58,16 @@ for i in list:
     sum_of_numbers = sum_of_numbers + i
 
 print(sum_of_numbers, "is the sum of numbers")
+
+#8. Write a Python program to check if a number is prime.
+
+num = int(input("Enter the number: "))
+
+for i in range(2,num):
+    if num % i == 0:
+          print(num, "is not a prime number.")
+          break        
+else:
+    print(num,"is a prime number")
  
  

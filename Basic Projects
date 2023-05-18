@@ -50,5 +50,13 @@ else:
         factorial  = factorial * i
     print("The factorial of", num, "is", factorial)
     
+#7. Write a Python program to find the sum of all numbers in a list.
+list = [1,2,3,4]
+sum_of_numbers = 0
+
+for i in list:
+    sum_of_numbers = sum_of_numbers + i
+
+print(sum_of_numbers, "is the sum of numbers")
  
  

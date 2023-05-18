@@ -78,9 +78,16 @@ vowels_count = 0
 
 
 for i in range(len(list_string)):
-    if list_string[i] == vowels[i]:
-        vowels_count[i] = vowels_count[i] + 1
-        print("The total number of vowels in the string are: ",sum(vowels_count))
-    else:
-        print("The string doesnot contain any vowels")
+    if list_string[i] in vowels:
+        vowels_count = vowels_count + 1
+   
+if vowels_count > 0:
+    print("The total number of vowels in the string is: ", vowels_count)
+else:
+    print("The string does not contain any vowels")
+            
  
+#10.Write a Python program to reverse a string.
+string = input("Enter the string: ")
+reverse_string = string[::-1]
+print(reverse_string)

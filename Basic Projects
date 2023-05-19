@@ -178,8 +178,14 @@ else:
         print("Elements between two lists are not similar")
                 
 #18.Write a Python program to find the largest and smallest elements in a given list.
+num_list = [51,2,3,46,1]
+new_list= list(set(num_list))
+
+print(new_list[0],"is the smallest element.","\n",new_list[-1]," is the largest element.")
 
 #19.Write a Python program to count the occurrences of each element in a given list.
+
+
 
 #20.Write a Python program to find the sum of all even numbers in a given list.
 

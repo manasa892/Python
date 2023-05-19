@@ -161,3 +161,21 @@ num_list = [1,3,4,7,10]
 num_list.sort(reverse = True)
 print("The new sorted list is: ","\n",num_list)
 print("The second largest number in the list is",num_list[1])
+
+#17. Write a python program to find the common elements between two lists.
+num_list1 = [2,3,3,4,4,4,4,4,4,5]
+num_list2 = [2,3,4,5]
+flag = False
+
+if len(num_list1) or len(num_list2) != 0:
+            for i in range(len(num_list1)) and range(len(num_list2)):
+                if num_list1[i] == num_list2[i]:
+                        flag = True
+
+if flag == True:
+        print("Elements between two lists are in similar")
+else:
+        print("Elements between two lists are not similar")
+                
+                
+

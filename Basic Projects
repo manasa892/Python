@@ -265,95 +265,95 @@ print(y)
 print(x)
 
 #LIST CONCEPTS
-Write a program to find the index of a specific element in a list.
-Write a program to reverse a list without using the reverse() method.
-Write a program to find the second largest and second smallest elements in a list.
-Write a program to check if two lists are equal (have the same elements in the same order).
-Write a program to merge two sorted lists into a new sorted list.
+25.Write a program to find the index of a specific element in a list.
+26.Write a program to reverse a list without using the reverse() method.
+27.Write a program to find the second largest and second smallest elements in a list.
+28.Write a program to check if two lists are equal (have the same elements in the same order).
+29.Write a program to merge two sorted lists into a new sorted list.
 
 #TUPLE CONCEPTS
-Write a program to find the length of a tuple.
-Write a program to check if a specific element exists in a tuple.
-Write a program to concatenate two tuples.
-Write a program to convert a tuple to a list.
-Write a program to count the occurrences of a specific element in a tuple.
+30.Write a program to find the length of a tuple.
+31.Write a program to check if a specific element exists in a tuple.
+32.Write a program to concatenate two tuples.
+33.Write a program to convert a tuple to a list.
+34.Write a program to count the occurrences of a specific element in a tuple.
 
 #SET CONCEPTS
-Write a program to find the union of two sets.
-Write a program to find the intersection of two sets.
-Write a program to check if a specific element exists in a set.
-Write a program to remove duplicates from a list and convert it to a set.
-Write a program to perform set difference between two sets.
+35.Write a program to find the union of two sets.
+36.Write a program to find the intersection of two sets.
+37.Write a program to check if a specific element exists in a set.
+38.Write a program to remove duplicates from a list and convert it to a set.
+39.Write a program to perform set difference between two sets.
 
 #Dictionaries
-Write a program to create a dictionary and print its key-value pairs.
-Write a program to check if a specific key exists in a dictionary.
-Write a program to find the length of a dictionary.
-Write a program to iterate over the key-value pairs of a dictionary.
-Write a program to remove a key-value pair from a dictionary.
+40.Write a program to create a dictionary and print its key-value pairs.
+41.Write a program to check if a specific key exists in a dictionary.
+42.Write a program to find the length of a dictionary.
+43.Write a program to iterate over the key-value pairs of a dictionary.
+44.Write a program to remove a key-value pair from a dictionary.
 
 #If-Else Concepts
-Write a program to check if a given number is positive, negative, or zero.
-Write a program to determine if a year is a leap year or not.
-Write a program to find the largest of three numbers.
-Write a program to determine if a given number is even or odd.
-Write a program to check if a given sentence is a palindrome. Ignore spaces, punctuation,
+45.Write a program to check if a given number is positive, negative, or zero.
+46.Write a program to determine if a year is a leap year or not.
+47.Write a program to find the largest of three numbers.
+48.Write a program to determine if a given number is even or odd.
+49.Write a program to check if a given sentence is a palindrome. Ignore spaces, punctuation,
 and capitalization while checking for a palindrome. Example: "A man, a plan, a canal, Panama!" should be considered a palindrome.
 
 #While Loop
-Write a program to print the numbers from 1 to 10 using a while loop.
-Write a program that continuously prompts the user to enter a number until they enter a negative number. Display the sum of all the positive numbers entered.
-Write a program that prints all the even numbers from 1 to 20 using a while loop.
-Write a program that asks the user to guess a secret number between 1 and 100. Keep prompting the user for guesses until they guess the correct number. Provide feedback if the guess is too high or too low.
-Write a program that calculates the factorial of a given number using a while loop. The factorial of a number n is the product of all positive integers from 1 to n.
+50.Write a program to print the numbers from 1 to 10 using a while loop.
+51.Write a program that continuously prompts the user to enter a number until they enter a negative number. Display the sum of all the positive numbers entered.
+52.Write a program that prints all the even numbers from 1 to 20 using a while loop.
+53.Write a program that asks the user to guess a secret number between 1 and 100. Keep prompting the user for guesses until they guess the correct number. Provide feedback if the guess is too high or too low.
+54.Write a program that calculates the factorial of a given number using a while loop. The factorial of a number n is the product of all positive integers from 1 to n.
 
 #For Loops
-Write a program that prints the multiplication table of a given number using a for loop.
-Write a program that finds the largest element in a given list using a for loop.
-Write a program that prints the Fibonacci sequence up to a specified number of terms using a for loop.
-Write a program that prints a pattern of asterisks in a right-angled triangle shape using a for loop.
-Write a program that counts the number of occurrences of a specific character in a given string using a for loop.
+55.Write a program that prints the multiplication table of a given number using a for loop.
+56.Write a program that finds the largest element in a given list using a for loop.
+57.Write a program that prints the Fibonacci sequence up to a specified number of terms using a for loop.
+58.Write a program that prints a pattern of asterisks in a right-angled triangle shape using a for loop.
+59.Write a program that counts the number of occurrences of a specific character in a given string using a for loop.
 
 #Functions
-Write a function that takes two numbers as parameters and returns their sum.
-Write a function that takes a list of numbers as a parameter and returns the average of those numbers.
-Write a function that checks whether a given number is prime or not and returns a boolean value.
-Write a function that takes a string as a parameter and returns the reverse of that string.
-Write a function that takes a list of strings as a parameter and returns a new list containing only the strings that have more than five characters.
+60.Write a function that takes two numbers as parameters and returns their sum.
+61.Write a function that takes a list of numbers as a parameter and returns the average of those numbers.
+62.Write a function that checks whether a given number is prime or not and returns a boolean value.
+63.Write a function that takes a string as a parameter and returns the reverse of that string.
+64.Write a function that takes a list of strings as a parameter and returns a new list containing only the strings that have more than five characters.
 
 #Arrays
-Write a program to find the maximum element in an array.
-Write a program to find the sum of all elements in an array.
-Write a program to count the number of occurrences of a specific element in an array.
-Write a program to remove all duplicate elements from an array.
-Write a program to check if an array is sorted in ascending order.
+65.Write a program to find the maximum element in an array.
+66.Write a program to find the sum of all elements in an array.
+67.Write a program to count the number of occurrences of a specific element in an array.
+68.Write a program to remove all duplicate elements from an array.
+69.Write a program to check if an array is sorted in ascending order.
 
 #CLASSES AND OBJECTS 
-Create a class called "Rectangle" with attributes length and width. Write methods to calculate the area and perimeter of the rectangle.
-Create a class called "Student" with attributes name, age, and grade. Write a method to display the student's information.
-Create a class called "BankAccount" with attributes account number and balance. Write methods to deposit and withdraw money from the account.
-Create a class called "Car" with attributes make, model, and year. Write a method to display the car's information.
-Create a class called "Employee" with attributes name, salary, and position. Write a method to calculate and display the employee's annual salary.
+70.Create a class called "Rectangle" with attributes length and width. Write methods to calculate the area and perimeter of the rectangle.
+71.Create a class called "Student" with attributes name, age, and grade. Write a method to display the student's information.
+72.Create a class called "BankAccount" with attributes account number and balance. Write methods to deposit and withdraw money from the account.
+73.Create a class called "Car" with attributes make, model, and year. Write a method to display the car's information.
+74.Create a class called "Employee" with attributes name, salary, and position. Write a method to calculate and display the employee's annual salary.
 
 #Inheritance
-Create a parent class called "Animal" with a method called "eat". Create a child class called "Dog" that inherits from the Animal class and adds a method called "bark".
-Create a parent class called "Shape" with attributes length and width. Create child classes called "Rectangle" and "Square" that inherit from the Shape class and override the area method to calculate the area of the corresponding shape.
-Create a parent class called "Vehicle" with attributes make, model, and year. Create child classes called "Car" and "Motorcycle" that inherit from the Vehicle class and add specific attributes and methods.
-Create a parent class called "Person" with attributes name and age. Create a child class called "Employee" that inherits from the Person class and adds attributes such as position and salary.
-Create a parent class called "BankAccount" with attributes account number and balance. Create child classes called "CheckingAccount" and "SavingsAccount" that inherit from the BankAccount class and add specific methods for depositing and withdrawing money.
+75.Create a parent class called "Animal" with a method called "eat". Create a child class called "Dog" that inherits from the Animal class and adds a method called "bark".
+76.Create a parent class called "Shape" with attributes length and width. Create child classes called "Rectangle" and "Square" that inherit from the Shape class and override the area method to calculate the area of the corresponding shape.
+77.Create a parent class called "Vehicle" with attributes make, model, and year. Create child classes called "Car" and "Motorcycle" that inherit from the Vehicle class and add specific attributes and methods.
+78.Create a parent class called "Person" with attributes name and age. Create a child class called "Employee" that inherits from the Person class and adds attributes such as position and salary.
+79.Create a parent class called "BankAccount" with attributes account number and balance. Create child classes called "CheckingAccount" and "SavingsAccount" that inherit from the BankAccount class and add specific methods for depositing and withdrawing money.
 
 #Iterators
-Create a custom iterator called "RangeIterator" that takes a start and end value and iterates over the range of values, returning each value.
-Implement a custom iterator called "FibonacciIterator" that generates the Fibonacci sequence and returns each number in the sequence.
-Write a program that uses the built-in "iter" function to create an iterator for a list and iterate over its elements using a "for" loop.
-Create a custom iterator called "FileLineIterator" that reads a text file and iterates over each line in the file, returning each line as a string.
-Implement a custom iterator called "PrimeIterator" that generates prime numbers and returns each prime number in the sequence.
+80.Create a custom iterator called "RangeIterator" that takes a start and end value and iterates over the range of values, returning each value.
+81.Implement a custom iterator called "FibonacciIterator" that generates the Fibonacci sequence and returns each number in the sequence.
+82.Write a program that uses the built-in "iter" function to create an iterator for a list and iterate over its elements using a "for" loop.
+83.Create a custom iterator called "FileLineIterator" that reads a text file and iterates over each line in the file, returning each line as a string.
+84.Implement a custom iterator called "PrimeIterator" that generates prime numbers and returns each prime number in the sequence.
 
 #Polymorphism
-Create a base class called "Shape" with a method called "area()". Create derived classes such as "Circle", "Rectangle", and "Triangle" that override the "area()" method to calculate the area specific to each shape. Use polymorphism to call the "area()" method on different shape objects.
-Create a base class called "Animal" with a method called "make_sound()". Create derived classes such as "Dog", "Cat", and "Cow" that override the "make_sound()" method to produce the sound specific to each animal. Use polymorphism to call the "make_sound()" method on different animal objects.
-Create a class called "Car" with a method called "drive()". Create derived classes such as "Sedan", "SUV", and "SportsCar" that override the "drive()" method to provide different driving experiences. Use polymorphism to call the "drive()" method on different car objects.
-Create a base class called "Shape" with a method called "draw()". Create derived classes such as "Circle", "Rectangle", and "Triangle" that override the "draw()" method to draw the shape on the screen using a graphics library. Use polymorphism to call the "draw()" method on different shape objects.
-Create a base class called "Employee" with a method called "calculate_salary()". Create derived classes such as "Manager", "Developer", and "Tester" that override the "calculate_salary()" method to calculate the salary based on the specific role. Use polymorphism to call the "calculate_salary()" method on different employee objects.
+85.Create a base class called "Shape" with a method called "area()". Create derived classes such as "Circle", "Rectangle", and "Triangle" that override the "area()" method to calculate the area specific to each shape. Use polymorphism to call the "area()" method on different shape objects.
+86.Create a base class called "Animal" with a method called "make_sound()". Create derived classes such as "Dog", "Cat", and "Cow" that override the "make_sound()" method to produce the sound specific to each animal. Use polymorphism to call the "make_sound()" method on different animal objects.
+87.Create a class called "Car" with a method called "drive()". Create derived classes such as "Sedan", "SUV", and "SportsCar" that override the "drive()" method to provide different driving experiences. Use polymorphism to call the "drive()" method on different car objects.
+88.Create a base class called "Shape" with a method called "draw()". Create derived classes such as "Circle", "Rectangle", and "Triangle" that override the "draw()" method to draw the shape on the screen using a graphics library. Use polymorphism to call the "draw()" method on different shape objects.
+89.Create a base class called "Employee" with a method called "calculate_salary()". Create derived classes such as "Manager", "Developer", and "Tester" that override the "calculate_salary()" method to calculate the salary based on the specific role. Use polymorphism to call the "calculate_salary()" method on different employee objects.
 
 

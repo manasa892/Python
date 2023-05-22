@@ -211,11 +211,7 @@ else:
     print("There are no elements divisble by 2.")
 
 
-#21.Write a Python program to reverse a string without using any built-in functions or slicing.
-
-
-
-#22.Write a Python program to remove duplicates from a list while preserving the original order.
+#21.Write a Python program to remove duplicates from a list while preserving the original order.
 List_temp = [1,1,2,2,2,3,3,4,4,4,5,5,6,6,8]
 new_list =[]
 
@@ -229,3 +225,9 @@ if len(new_list) > 0:
 else:
     print("The list doesnot contain any data")
 
+#Programs on Different Data Types 
+#22.Lists: Write a Python program to find the second largest element in a given list.
+
+#23.Tuples: Write a Python program to find the common elements between two tuples.
+
+#24.Sets: Write a Python program to find the union and intersection of two sets.

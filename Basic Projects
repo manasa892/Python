@@ -356,4 +356,3 @@ and capitalization while checking for a palindrome. Example: "A man, a plan, a c
 88.Create a base class called "Shape" with a method called "draw()". Create derived classes such as "Circle", "Rectangle", and "Triangle" that override the "draw()" method to draw the shape on the screen using a graphics library. Use polymorphism to call the "draw()" method on different shape objects.
 89.Create a base class called "Employee" with a method called "calculate_salary()". Create derived classes such as "Manager", "Developer", and "Tester" that override the "calculate_salary()" method to calculate the salary based on the specific role. Use polymorphism to call the "calculate_salary()" method on different employee objects.
 
-

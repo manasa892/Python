@@ -227,7 +227,28 @@ else:
 
 #Programs on Different Data Types 
 #22.Lists: Write a Python program to find the second largest element in a given list.
+list_temp = [3,4,6,7,8,1]
+list_temp.sort()
+print(list_temp[-2]," is the second largest element in a given list.")
+
 
 #23.Tuples: Write a Python program to find the common elements between two tuples.
+mytuple1 = (1,2,3,4,5,6)
+mytuple2 = (2,3,4,7,8,6)
+mytuple3 = ()
+
+if len(mytuple1) != 0 or len(mytuple2) != 0:
+    smaller_tuple = mytuple1 if len(mytuple1) <= len(mytuple2) else mytuple2
+    for element in smaller_tuple:
+        if element in mytuple1 and element in mytuple2:
+            mytuple3 += (element, )
+else:
+    print("Tuples do not contain elements.")
+
+if len(mytuple3) > 0:
+    print(mytuple3," are the common elements between two tuples")
+else:
+    print("There are no common elements between the tuples")
+
 
 #24.Sets: Write a Python program to find the union and intersection of two sets.

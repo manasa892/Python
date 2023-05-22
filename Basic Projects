@@ -184,7 +184,17 @@ new_list= list(set(num_list))
 print(new_list[0],"is the smallest element.","\n",new_list[-1]," is the largest element.")
 
 #19.Write a Python program to count the occurrences of each element in a given list.
+num_list = [1,2,2,3,3,4,4,5]
+occurance_count = {}
 
+if len(num_list) != 0:
+    for element in num_list:
+        if element in occurance_count:
+            occurance_count[element] += 1
+        else:
+            occurance_count[element] = 1
+
+print("Occurrences: ",occurance_count)
 
 
 #20.Write a Python program to find the sum of all even numbers in a given list.

@@ -198,6 +198,20 @@ print("Occurrences: ",occurance_count)
 
 
 #20.Write a Python program to find the sum of all even numbers in a given list.
+new_list = [1,2,3,4]
+sum = 0
 
-#21.
+for element in new_list:
+    if element % 2 == 0:
+        sum = sum + element
+
+if sum > 0:
+    print(sum,"is the sum of all even numbers in the given list.")
+else:
+    print("There are no elements divisble by 2.")
+
+
+#21.Write a Python program to reverse a string without using any built-in functions or slicing.
+
+#22.Write a Python program to remove duplicates from a list while preserving the original order.
 

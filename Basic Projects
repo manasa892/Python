@@ -324,6 +324,11 @@ else:
 
 
 27.Write a program to find the second largest and second smallest elements in a list.
+new_list = [2,3,56,76,87]
+new_list.sort()
+print(new_list[-2]," is the second largest element in the given list.")
+print(new_list[1]," is the second smallest element in the give list.")
+
 28.Write a program to check if two lists are equal (have the same elements in the same order).
 29.Write a program to merge two sorted lists into a new sorted list.
 

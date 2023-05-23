@@ -1,3 +1,4 @@
+#SET CONCEPTS
 35.Write a program to find the union of two sets.
 set1 = {"apple","banana","cherry"}
 set2 = {1,2,3}
@@ -6,4 +7,21 @@ set3 = {}
 
 set3 = set1.union(set2)
 print(set3)
+
+36.Write a program to find the intersection of two sets.
+set1 = {1,2,3,4,5}
+set2 = {1,2,3,7,8}
+set3 ={}
+
+if len(set1)==0 or len(set2)==0:
+    print("Enter the set values.")
+else:
+    set3 = set1.intersection(set2)
+    print(set3)
+    
+37.Write a program to check if a specific element exists in a set.
+
+
+38.Write a program to remove duplicates from a list and convert it to a set.
+39.Write a program to perform set difference between two sets.
 

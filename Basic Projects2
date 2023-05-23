@@ -1,1 +1,9 @@
+35.Write a program to find the union of two sets.
+set1 = {"apple","banana","cherry"}
+set2 = {1,2,3}
+
+set3 = {}
+
+set3 = set1.union(set2)
+print(set3)
 

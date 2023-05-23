@@ -37,5 +37,22 @@ else:
     print("No element",n,"not found.")
 
 38.Write a program to remove duplicates from a list and convert it to a set.
+temp_list = [1,2,3,4,5,5,4,6,6,6,7,7,7,7,8,8,9,9]
+new_list =[]
+set1 = {}
+
+if len(temp_list)!=0:
+    for element in temp_list:
+        new_list.append(element)
+else:
+    print("Please enter list elements.")
+
+if len(new_list) > 0:
+    set1 = set(new_list)
+    print(set1)
+else:
+    print("No elements found.")
+
+
 39.Write a program to perform set difference between two sets.
 

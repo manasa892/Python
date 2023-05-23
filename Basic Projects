@@ -330,12 +330,67 @@ print(new_list[-2]," is the second largest element in the given list.")
 print(new_list[1]," is the second smallest element in the give list.")
 
 28.Write a program to check if two lists are equal (have the same elements in the same order).
+new_list1 = [1,2,3,5,4]
+new_list2 = [2,3,4,5,1]
+new_list1.sort()
+new_list2.sort()
+flag = False
+
+if len(new_list1)!= 0 or len(new_list2) != 0:
+    smaller_list = new_list1 if len(new_list1) <= len(new_list2) else new_list2
+    for element in smaller_list:
+        if element in new_list1 and element in new_list2:
+            flag = True
+else:
+    print("Lists doesnot contain any elements")
+
+if flag == True:
+    print("Yes, the elements are equal and in the order")
+else:
+    print("No, the elements are not in the order")
+
+
 29.Write a program to merge two sorted lists into a new sorted list.
+temp_list1 = [1,2,3,4,5]
+temp_list2 = [6,7,8,8,10]
+new_list = []
+
+if len(temp_list1) == 0 or len(temp_list2)== 0:
+    print("Please enter the values into the list")
+else:
+    new_list = temp_list1 + temp_list2
+    print("The merged list is as below","\n",new_list)
+
+
+
+
+
 
 #TUPLE CONCEPTS
 30.Write a program to find the length of a tuple.
+thistuple = (1,2,3,4,5)
+print(len(thistuple))
+
 31.Write a program to check if a specific element exists in a tuple.
+thistuple = (1,2,3,4,5)
+n = int(input("Enter the element need to be searched: "))
+flag = False
+
+if len(thistuple) > 0:
+    for element in thistuple:
+        if n == element:
+            flag = True
+else:
+    print("Please eneter the values into the list.")
+
+if flag  == True:
+    print("Yes, the element",n,"exists in the tuple.")
+else:
+    print("No,the element doesnot exist in the tuple.")
+
 32.Write a program to concatenate two tuples.
+
+
 33.Write a program to convert a tuple to a list.
 34.Write a program to count the occurrences of a specific element in a tuple.
 

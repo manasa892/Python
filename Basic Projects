@@ -266,7 +266,63 @@ print(x)
 
 #LIST CONCEPTS
 25.Write a program to find the index of a specific element in a list.
+# Step 1: Create a list
+my_list = [10, 20, 30, 40, 50]
+
+# Step 2: Prompt the user to enter the element
+target_element = int(input("Enter the element to find its index: "))
+
+# Step 4: Find the index of the target_element
+try:
+    index = my_list.index(target_element)
+    print("The index of", target_element, "is", index)
+except ValueError:
+    print("Element not found in the list.")
+    
+    
+                       (OR)
+  
+ # Step 1: Create a list
+my_list = [10, 20, 30, 40, 50]
+
+# Step 2: Prompt the user to enter the element
+target_element = int(input("Enter the element to find its index: "))
+
+# Step 3: Initialize a variable to keep track of the index
+index = None
+
+# Step 4: Iterate over the list and find the index of the target_element
+for i in range(len(my_list)):
+    if my_list[i] == target_element:
+        index = i
+        break
+
+# Step 5: Check if the index is found or not
+if index is not None:
+    print("The index of", target_element, "is", index)
+else:
+    print("Element not found in the list.")
+
+
+
+
 26.Write a program to reverse a list without using the reverse() method.
+temp_list = [1,2,3,4,5]
+new_list = []
+
+if len(temp_list)> 0:
+    for value in temp_list:
+        new_list = [value] + new_list
+else:
+    print("Enter the values in the list")
+
+
+if len(new_list)>0:
+    print(new_list," is the new list")
+else:
+    print("Invalid")
+
+
 27.Write a program to find the second largest and second smallest elements in a list.
 28.Write a program to check if two lists are equal (have the same elements in the same order).
 29.Write a program to merge two sorted lists into a new sorted list.

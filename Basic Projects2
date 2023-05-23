@@ -20,7 +20,21 @@ else:
     print(set3)
     
 37.Write a program to check if a specific element exists in a set.
+set1 = {1,2,3,4,5}
+n = int(input("Enter the number:"))
+flag = False
 
+if len(set1)!=0:
+    for element in set1:
+        if n == element:
+            flag = True
+else:
+    print("Enter the set values")
+
+if flag == True:
+    print("Yes, element",n,"is present in the set.")
+else:
+    print("No element",n,"not found.")
 
 38.Write a program to remove duplicates from a list and convert it to a set.
 39.Write a program to perform set difference between two sets.

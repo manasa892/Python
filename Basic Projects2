@@ -55,4 +55,13 @@ else:
 
 
 39.Write a program to perform set difference between two sets.
+set1 = {1,2,3,4,5}
+set2 = {3,4,5,6,7}
+set3 = {}
+
+if len(set1)!=0 and len(set2)!=0:
+    set3 = set1 - set2
+    print(set3)
+else:
+    print("Enter the valid elements.")
 

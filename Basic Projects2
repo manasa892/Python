@@ -65,3 +65,9 @@ if len(set1)!=0 and len(set2)!=0:
 else:
     print("Enter the valid elements.")
 
+#Dictionaries
+40.Write a program to create a dictionary and print its key-value pairs.
+41.Write a program to check if a specific key exists in a dictionary.
+42.Write a program to find the length of a dictionary.
+43.Write a program to iterate over the key-value pairs of a dictionary.
+44.Write a program to remove a key-value pair from a dictionary.

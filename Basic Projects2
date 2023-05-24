@@ -134,3 +134,13 @@ for key, value in new_dict.items():
     print(i)
     
 44.Write a program to remove a key-value pair from a dictionary.
+mydict = {
+    "Name" : "Manasa",
+    "id" : "RED011",
+    "Department" : "IT",
+    "Education" : "BCA"
+}
+
+mydict.pop("Department")
+mydict.popitem()
+print(mydict)

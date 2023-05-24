@@ -269,6 +269,16 @@ print("The factorial is: ",factorial)
 
 #For Loops
 55.Write a program that prints the multiplication table of a given number using a for loop.
+n = int(input("Enter the number for which table need to be built: "))
+
+
+for value in range(1,11):
+    result = n * value
+    print(f"{n} * {value}={result}")
+
+print("The above mentioned is the table of the digit",n)
+
+
 56.Write a program that finds the largest element in a given list using a for loop.
 57.Write a program that prints the Fibonacci sequence up to a specified number of terms using a for loop.
 58.Write a program that prints a pattern of asterisks in a right-angled triangle shape using a for loop.

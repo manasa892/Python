@@ -189,3 +189,23 @@ else:
     
 49.Write a program to check if a given sentence is a palindrome. Ignore spaces, punctuation,
 and capitalization while checking for a palindrome. Example: "A man, a plan, a canal, Panama!" should be considered a palindrome
+import re
+
+sentence = "A man, a plan, a canal, Panama!"
+
+#Remove spaces and punctuation from the sentence
+cleaned_sentence = re.sub(r'[^a-zA-Z]','',sentence.lower())
+
+#check if the cleaned sentence is equal to its reverse
+if cleaned_sentence == cleaned_sentence[::-1]:
+    print("The sentence is a palindrome.")
+else:
+    print("The sentence is not a palindrome.")
+    
+
+#While Loop
+50.Write a program to print the numbers from 1 to 10 using a while loop.
+51.Write a program that continuously prompts the user to enter a number until they enter a negative number. Display the sum of all the positive numbers entered.
+52.Write a program that prints all the even numbers from 1 to 20 using a while loop.
+53.Write a program that asks the user to guess a secret number between 1 and 100. Keep prompting the user for guesses until they guess the correct number. Provide feedback if the guess is too high or too low.
+54.Write a program that calculates the factorial of a given number using a while loop. The factorial of a number n is the product of all positive integers from 1 to n.

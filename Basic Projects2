@@ -179,5 +179,13 @@ else:
     print(n3," is the largest number.")
 
 48.Write a program to determine if a given number is even or odd.
+n = int(input("Enter the number: "))
+
+if n % 2 == 0 :
+    print("The number is even")
+else:
+    print("The number is odd")
+    
+    
 49.Write a program to check if a given sentence is a palindrome. Ignore spaces, punctuation,
 and capitalization while checking for a palindrome. Example: "A man, a plan, a canal, Panama!" should be considered a palindrome

@@ -84,6 +84,20 @@ print(new_model.get('Built_by'))
 print(new_model.keys())
 
 41.Write a program to check if a specific key exists in a dictionary.
+new_dict = {
+    "Model" : "Mustang",
+    "Year" : "2023",
+    "brand" : "Ford"
+}
+
+key = input("Enter the element need to be searched: ")
+
+if key in new_dict:
+    print("Yes, the specified element is present in the dictionary.")
+else:
+    print("No, the specified key doesnt exist in the dictionary.")
+
+
 
 42.Write a program to find the length of a dictionary.
 43.Write a program to iterate over the key-value pairs of a dictionary.

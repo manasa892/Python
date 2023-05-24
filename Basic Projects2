@@ -256,3 +256,20 @@ while True:
 
 
 54.Write a program that calculates the factorial of a given number using a while loop. The factorial of a number n is the product of all positive integers from 1 to n.
+
+n = int(input("Enter the number: "))
+factorial = 1
+
+while n > 0:
+    factorial *= n
+    n -= 1
+
+print("The factorial is: ",factorial)
+
+
+#For Loops
+55.Write a program that prints the multiplication table of a given number using a for loop.
+56.Write a program that finds the largest element in a given list using a for loop.
+57.Write a program that prints the Fibonacci sequence up to a specified number of terms using a for loop.
+58.Write a program that prints a pattern of asterisks in a right-angled triangle shape using a for loop.
+59.Write a program that counts the number of occurrences of a specific character in a given string using a for loop.

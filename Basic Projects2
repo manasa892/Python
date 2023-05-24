@@ -223,5 +223,36 @@ while n >= 0:
 print("Sum of positive numbers entered: ", sum_positive_numbers)
 
 52.Write a program that prints all the even numbers from 1 to 20 using a while loop.
+i  = 1
+
+while i<= 20:
+    if i % 2 == 0:
+        print(i)
+    i += 1    
+
+print("The above printed numbers are even numbers between 2 to 20.")
+
 53.Write a program that asks the user to guess a secret number between 1 and 100. Keep prompting the user for guesses until they guess the correct number. Provide feedback if the guess is too high or too low.
+secret_number = 42
+count = 0 
+
+while True:
+    guess = int(input("Guess the secret number between 1 and 100 (enter -1 to exit): "))
+
+    if guess == -1:
+        print("Exiting the program...")
+        break 
+
+    count += 1
+
+    if guess  == secret_number:
+        print("Congratulations! You guessed the secret number in", count, "tries.")
+        break
+    elif guess < secret_number:
+        print("Too low! Try again.")
+    else:
+        print("Too high! Try again.")
+
+
+
 54.Write a program that calculates the factorial of a given number using a while loop. The factorial of a number n is the product of all positive integers from 1 to n.

@@ -212,7 +212,15 @@ while i < 10:
     
     
 51.Write a program that continuously prompts the user to enter a number until they enter a negative number. Display the sum of all the positive numbers entered.
+n = int(input("Enter the number: "))
+sum_positive_numbers = 0
 
+while n >= 0:
+    sum_positive_numbers += n
+    n = int(input("Enter the number (negative number to exit): "))
+
+
+print("Sum of positive numbers entered: ", sum_positive_numbers)
 
 52.Write a program that prints all the even numbers from 1 to 20 using a while loop.
 53.Write a program that asks the user to guess a secret number between 1 and 100. Keep prompting the user for guesses until they guess the correct number. Provide feedback if the guess is too high or too low.

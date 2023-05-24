@@ -100,5 +100,37 @@ else:
 
 
 42.Write a program to find the length of a dictionary.
+mydict = {
+    "Name" : "Manasa",
+    "Id" : "RED011",
+    "Department" : "IT"
+}
+
+print(len(mydict),"is the length of the given dictionary.")
+
+
 43.Write a program to iterate over the key-value pairs of a dictionary.
+new_dict  = {
+    "Name" : "Manasa",
+    "id" : "RED011",
+    "department" : "IT",
+    "Education" : "BCA"
+}
+
+for key, value in new_dict.items():
+    print(f"Key: {key},Value: {value}")
+
+                      (or)
+                      
+                      
+new_dict  = {
+    "Name" : "Manasa",
+    "id" : "RED011",
+    "department" : "IT",
+    "Education" : "BCA"
+}
+
+for key, value in new_dict.items():
+    print(i)
+    
 44.Write a program to remove a key-value pair from a dictionary.

@@ -67,7 +67,24 @@ else:
 
 #Dictionaries
 40.Write a program to create a dictionary and print its key-value pairs.
+mydict = {
+    "Car" : "Tesla",
+    "Model" : "2023",
+    "Year" : "2023",
+    "Built_by" : "Elon Musk" 
+}       
+
+print(mydict)
+new_model = mydict.copy()
+print(new_model)
+print(new_model.items())
+print(new_model.get('Car'))
+print(new_model.get('Year'))
+print(new_model.get('Built_by'))
+print(new_model.keys())
+
 41.Write a program to check if a specific key exists in a dictionary.
+
 42.Write a program to find the length of a dictionary.
 43.Write a program to iterate over the key-value pairs of a dictionary.
 44.Write a program to remove a key-value pair from a dictionary.

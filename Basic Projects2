@@ -329,3 +329,25 @@ for ele in string:
         occurance += 1
         
 print("The occurance of the character",element," is: ",occurance)
+
+
+#Functions
+60.Write a function that takes two numbers as parameters and returns their sum.
+def sum_func(a,b):
+    s = a+b 
+    return s
+
+#User input
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+result  = sum_func(num1, num2)
+print("The sum is: ",result)
+
+
+
+
+61.Write a function that takes a list of numbers as a parameter and returns the average of those numbers.
+62.Write a function that checks whether a given number is prime or not and returns a boolean value.
+63.Write a function that takes a string as a parameter and returns the reverse of that string.
+64.Write a function that takes a list of strings as a parameter and returns a new list containing only the strings that have more than five characters.

@@ -295,5 +295,22 @@ else:
 
 
 57.Write a program that prints the Fibonacci sequence up to a specified number of terms using a for loop.
+terms = int(input("Enter the number of fibonacci terms to generate: "))
+
+#Initialize the first two terms
+a,b = 0,1
+fibonacci_sequence = [a,b]
+
+#generate the fibonacci sequence
+for i in range(2, terms):
+    next_number = a + b
+    fibonacci_sequence.append(next_number)
+    a,b = b,next_number
+
+#print the fibonacci sequence
+print(fibonacci_sequence)
+
+
+
 58.Write a program that prints a pattern of asterisks in a right-angled triangle shape using a for loop.
 59.Write a program that counts the number of occurrences of a specific character in a given string using a for loop.

@@ -405,4 +405,12 @@ print(result)
 
 
 63.Write a function that takes a string as a parameter and returns the reverse of that string.
+def reverse_string(string):
+    new_string = string[::-1]
+    print(new_string)
+
+
+new_string = input("Enter the string: ")
+reverse_string(new_string)
+
 64.Write a function that takes a list of strings as a parameter and returns a new list containing only the strings that have more than five characters.

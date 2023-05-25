@@ -465,4 +465,40 @@ for i in range(0, len(fr)):
 print("------------------------")
 
 68.Write a program to remove all duplicate elements from an array.
+def remove_duplicates(array):
+    #create a set of all the elements in the array
+    unique_elements = set(array)
+
+    #Create a new array with the unique elements.
+    new_array  = []
+    for element in unique_elements:
+        new_array.append(element)
+    return new_array
+
+array = [1,2,3,1,2,4,5]
+new_array = remove_duplicates(array)
+print(new_array)
+
+
 69.Write a program to check if an array is sorted in ascending order
+def is_sorted(array):
+    #check if the array is empty
+    if not array:
+        return True
+    
+    #Check if all the elements in the array are in ascending order.
+    for i in range(len(array) - 1):
+        if array[i] > array[i + 1]:
+            return False
+    
+    return True
+
+array = [1,2,3,4,5]
+print(is_sorted(array))
+
+#CLASSES AND OBJECTS 
+70.Create a class called "Rectangle" with attributes length and width. Write methods to calculate the area and perimeter of the rectangle.
+71.Create a class called "Student" with attributes name, age, and grade. Write a method to display the student's information.
+72.Create a class called "BankAccount" with attributes account number and balance. Write methods to deposit and withdraw money from the account.
+73.Create a class called "Car" with attributes make, model, and year. Write a method to display the car's information.
+74.Create a class called "Employee" with attributes name, salary, and position. Write a method to calculate and display the employee's annual salary.

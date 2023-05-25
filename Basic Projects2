@@ -498,7 +498,134 @@ print(is_sorted(array))
 
 #CLASSES AND OBJECTS 
 70.Create a class called "Rectangle" with attributes length and width. Write methods to calculate the area and perimeter of the rectangle.
+class Rectangle:
+    """A class representing a rectangle.
+
+  Attributes:
+    length: The length of the rectangle.
+    width: The width of the rectangle.
+  """
+    def __init__(self,length,width):
+        """Initializes a new rectangle.
+
+    Args:
+      length: The length of the rectangle.
+      width: The width of the rectangle.
+    """
+        self.length = length
+        self.width = width
+
+    def area(self):
+        """Returns the area of the rectangle.
+
+    Returns:
+      The area of the rectangle.
+    """
+        return self.length * self.width
+    
+    def perimeter(self):
+        """Returns the perimeter of the rectangle.
+
+    Returns:
+      The perimeter of the rectangle.
+    """
+        return 2 * (self.length + self.width)
+    
+
+rectangle = Rectangle(10,5)
+print(rectangle.area())
+
+print(rectangle.perimeter())
+
+
+
 71.Create a class called "Student" with attributes name, age, and grade. Write a method to display the student's information.
+class Student:
+    """A class representing a student.
+
+  Attributes:
+    name: The name of the student.
+    age: The age of the student.
+    grade: The grade of the student.
+  """
+    def __init__(self,name,age,grade):
+        """Initializes a new student.
+
+    Args:
+      name: The name of the student.
+      age: The age of the student.
+      grade: The grade of the student.
+    """
+        self.name = name
+        self.age = age
+        self.grade = grade
+
+    def display_information(self):
+        """Displays the student's information.
+    """
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"Grade: {self.grade}")
+
+student  = Student("John Doe",12,8)
+student.display_information()
+
+
+
 72.Create a class called "BankAccount" with attributes account number and balance. Write methods to deposit and withdraw money from the account.
+class BankAccount:
+    """A class representing a bank account.
+
+  Attributes:
+    account_number: The account number of the bank account.
+    balance: The balance of the bank account.
+  """
+    
+    def __init__(self,account_number, balance):
+        """Initializes a new bank account.
+
+    Args:
+      account_number: The account number of the bank account.
+      balance: The balance of the bank account.
+    """
+        self.account_number = account_number
+        self.balance = balance
+
+    def deposit(self, amount):
+        """Deposits money into the bank account.
+
+    Args:
+      amount: The amount of money to deposit.
+    """
+        self.balance += amount
+
+    def withdraw(self, amount):
+        """Withdraws money from the bank account.
+
+    Args:
+      amount: The amount of money to withdraw.
+
+    Raises:
+      ValueError: If the amount to withdraw is greater than the balance of the account.
+    """
+        if amount > self.balance:
+            raise ValueError("Insufficient funds")
+        self.balance -= amount
+
+    def get_balance(self):
+        """Returns the balance of the bank account.
+
+    Returns:
+      The balance of the bank account.
+    """
+        return self.balance
+    
+account = BankAccount("1234567890",1000)
+account.deposit(100)
+print(account.get_balance())
+account.withdraw(50)
+print(account.get_balance())   
+
+
 73.Create a class called "Car" with attributes make, model, and year. Write a method to display the car's information.
 74.Create a class called "Employee" with attributes name, salary, and position. Write a method to calculate and display the employee's annual salary.

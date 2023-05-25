@@ -348,6 +348,61 @@ print("The sum is: ",result)
 
 
 61.Write a function that takes a list of numbers as a parameter and returns the average of those numbers.
+def calculate_average(numbers):
+    if len(numbers) == 0:
+        return 0  #Avoid divison by zero for an empty list 
+
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+numbers = [2,3,4,5,6]
+result= calculate_average(numbers)
+print(result)
+  
+                           (OR)
+                           
+                           
+ def calculate_average(numbers):
+    if len(numbers) == 0:
+        return 0
+    
+    total = sum(numbers)
+    average = total/len(numbers)
+    return average
+
+
+#Get the input from the user
+user_input = input("Enter a list of numbers (space - separated):")
+
+#Convert the input string into a list of numbers
+numbers = list(map(float, user_input.split()))
+
+#Calculate the average using the function
+result = calculate_average(numbers)
+
+#Print the result
+print("Average:",result)
+
 62.Write a function that checks whether a given number is prime or not and returns a boolean value.
+import math
+
+def is_prime(number):
+    if number <= 1:
+        return False
+    
+    #check divisibility from 2 to the square root of the number
+    for i in range(2, int(math.sqrt(number))+1):
+        if number % i == 0:
+            return False
+        
+    return True
+
+num = 10
+result = is_prime(num)
+print(result)
+
+
+
 63.Write a function that takes a string as a parameter and returns the reverse of that string.
 64.Write a function that takes a list of strings as a parameter and returns a new list containing only the strings that have more than five characters.

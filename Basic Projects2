@@ -280,6 +280,20 @@ print("The above mentioned is the table of the digit",n)
 
 
 56.Write a program that finds the largest element in a given list using a for loop.
+num_list = [10,15,25,8,15]
+
+largest = num_list[0]
+
+for num in num_list:
+    if num > largest:
+        largest = num
+
+if largest  > 0 :
+    print("The largest number is: ", largest)
+else:
+    print("Please enter the number.")
+
+
 57.Write a program that prints the Fibonacci sequence up to a specified number of terms using a for loop.
 58.Write a program that prints a pattern of asterisks in a right-angled triangle shape using a for loop.
 59.Write a program that counts the number of occurrences of a specific character in a given string using a for loop.

@@ -320,3 +320,12 @@ for i in range(1,rows+1):
     print(asterisks * i)
     
 59.Write a program that counts the number of occurrences of a specific character in a given string using a for loop.
+string = "manasa"
+element = input("Enter the character to be found: ")
+occurance = 0
+
+for ele in string:
+    if ele == element:
+        occurance += 1
+        
+print("The occurance of the character",element," is: ",occurance)

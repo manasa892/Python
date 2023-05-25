@@ -414,3 +414,55 @@ new_string = input("Enter the string: ")
 reverse_string(new_string)
 
 64.Write a function that takes a list of strings as a parameter and returns a new list containing only the strings that have more than five characters.
+
+
+#Arrays
+65.Write a program to find the maximum element in an array.
+array = [1,2,3,4,5]
+print(max(array))
+
+66.Write a program to find the sum of all elements in an array.
+array = [10,20,30]
+sum = 0
+
+for element in array:
+    sum += element
+    element = element + 1
+
+if sum >0:
+    print(sum)
+else:
+    print("Please enter the elements into the list")
+    
+
+
+67.Write a program to count the number of occurrences of a specific element in an array.
+#Initialize Array
+arr = [1,2,6,9,10,10]
+#Array fr will store frequencies of element 
+fr = [None] * len(arr)
+visited = -1
+
+for i in range(0,len(arr)):
+    count = 1
+    for j in range(i+1, len(arr)):
+        if(arr[i]==arr[j]):
+            count = count +1
+            #to avoid counting same element again
+            fr[j] = visited
+    
+    if(fr[i] != visited):
+        fr[i] = count
+
+
+#Displays the frequency of each element present in array
+print('------------------------')
+print("Element | Frequency")
+print('------------------------')
+for i in range(0, len(fr)):
+    if(fr[i] != visited):
+        print(" "+str(arr[i])+" | " + str(fr[i]))
+print("------------------------")
+
+68.Write a program to remove all duplicate elements from an array.
+69.Write a program to check if an array is sorted in ascending order

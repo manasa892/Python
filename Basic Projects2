@@ -628,4 +628,69 @@ print(account.get_balance())
 
 
 73.Create a class called "Car" with attributes make, model, and year. Write a method to display the car's information.
+class Car:
+    def __init__(self,make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def display_info(self):
+        print("Make: ",self.make)
+        print("Model: ",self.model)
+        print("Year: ",self.year)
+
+#Create a new car object
+my_car = Car("Tesla","Model S",2022)
+
+#Display the car's information
+my_car.display_info()
+
+
+
+
 74.Create a class called "Employee" with attributes name, salary, and position. Write a method to calculate and display the employee's annual salary.
+class Employee:
+    def __init__(self,name,salary,position):
+        self.name = name
+        self.salary = salary
+        self.position = position
+
+    def calculate_annual_salary(self):
+        return self.salary * 12
+    
+    def display_employee_details(self):
+        print("Name: ",self.name)
+        print("Salary: ",self.salary)
+        print("Position: ",self.position)
+
+#Create an employee object
+employee = Employee("John Doe",50000,"Software Engineer")
+
+#Calculate and display the employee's annual salary
+annual_salary = employee.calculate_annual_salary()
+print("Annual Salary: ",annual_salary)
+
+#Display the employee's details
+employee.display_employee_details()
+
+#Inheritance
+75.Create a parent class called "Animal" with a method called "eat". Create a child class called "Dog" that inherits from the Animal class and adds a method called "bark".
+76.Create a parent class called "Shape" with attributes length and width. Create child classes called "Rectangle" and "Square" that inherit from the Shape class and override the area method to calculate the area of the corresponding shape.
+77.Create a parent class called "Vehicle" with attributes make, model, and year. Create child classes called "Car" and "Motorcycle" that inherit from the Vehicle class and add specific attributes and methods.
+78.Create a parent class called "Person" with attributes name and age. Create a child class called "Employee" that inherits from the Person class and adds attributes such as position and salary.
+79.Create a parent class called "BankAccount" with attributes account number and balance. Create child classes called "CheckingAccount" and "SavingsAccount" that inherit from the BankAccount class and add specific methods for depositing and withdrawing money.
+
+#Iterators
+80.Create a custom iterator called "RangeIterator" that takes a start and end value and iterates over the range of values, returning each value.
+81.Implement a custom iterator called "FibonacciIterator" that generates the Fibonacci sequence and returns each number in the sequence.
+82.Write a program that uses the built-in "iter" function to create an iterator for a list and iterate over its elements using a "for" loop.
+83.Create a custom iterator called "FileLineIterator" that reads a text file and iterates over each line in the file, returning each line as a string.
+84.Implement a custom iterator called "PrimeIterator" that generates prime numbers and returns each prime number in the sequence.
+
+#Polymorphism
+85.Create a base class called "Shape" with a method called "area()". Create derived classes such as "Circle", "Rectangle", and "Triangle" that override the "area()" method to calculate the area specific to each shape. Use polymorphism to call the "area()" method on different shape objects.
+86.Create a base class called "Animal" with a method called "make_sound()". Create derived classes such as "Dog", "Cat", and "Cow" that override the "make_sound()" method to produce the sound specific to each animal. Use polymorphism to call the "make_sound()" method on different animal objects.
+87.Create a class called "Car" with a method called "drive()". Create derived classes such as "Sedan", "SUV", and "SportsCar" that override the "drive()" method to provide different driving experiences. Use polymorphism to call the "drive()" method on different car objects.
+88.Create a base class called "Shape" with a method called "draw()". Create derived classes such as "Circle", "Rectangle", and "Triangle" that override the "draw()" method to draw the shape on the screen using a graphics library. Use polymorphism to call the "draw()" method on different shape objects.
+89.Create a base class called "Employee" with a method called "calculate_salary()". Create derived classes such as "Manager", "Developer", and "Tester" that override the "calculate_salary()" method to calculate the salary based on the specific role. Use polymorphism to call the "calculate_salary()" method on different employee objects.
+

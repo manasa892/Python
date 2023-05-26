@@ -675,22 +675,455 @@ employee.display_employee_details()
 
 #Inheritance
 75.Create a parent class called "Animal" with a method called "eat". Create a child class called "Dog" that inherits from the Animal class and adds a method called "bark".
+class Animal:
+    def eat(self):
+        print("I am eating.")
+
+class Dog(Animal):
+    def bark(self):
+        print("Woof!")
+
+#Create a dog object
+dog = Dog()
+
+#Call the eat method
+dog.eat()
+
+#call the bark method
+dog.bark()
+
+
+
 76.Create a parent class called "Shape" with attributes length and width. Create child classes called "Rectangle" and "Square" that inherit from the Shape class and override the area method to calculate the area of the corresponding shape.
 77.Create a parent class called "Vehicle" with attributes make, model, and year. Create child classes called "Car" and "Motorcycle" that inherit from the Vehicle class and add specific attributes and methods.
+class Vehicle:
+    def __init__(self,make,model,year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def get_make(self):
+        return self.make
+    
+    def get_model(self):
+        return self.model
+    
+    def get_year(self):
+        return self.year
+    
+class Car(Vehicle):
+    def __init__(self, make, model, year, num_of_doors):
+        super().__init__(make, model, year)
+        self.num_of_doors = num_of_doors
+    
+    def get_num_of_doors(self):
+        return self.num_of_doors
+    
+class Motorcycle(Vehicle):
+    def __init__(self, make, model, year,engine_size):
+        super().__init__(make, model, year)
+        self.engine_size = engine_size
+
+    def get_engine_size(self):
+        return self.engine_size
+    
+
+#Create a car object
+car = Car("Toyota","Camry",2023,4)
+
+#Print the car's make, model, year, and number of doors
+print("The car's make is:",car.get_make())
+print("The car's model is: ",car.get_model())
+print("The car's year is: ",car.get_year())
+print("The car's number of doors is:",car.get_num_of_doors())
+
+#Create a motorcycle object
+motorcycle = Motorcycle("Harley-Davidson","Sportster",2023,1200)
+
+#Print the motorcycle's make, model, year and engine size
+print("The motorcycle make is:",motorcycle.get_make())
+print("The motorcycle's model is:",motorcycle.get_model())
+print("The motorcycle's year is:",motorcycle.get_year())
+print("The motorcycle's engine size is:", motorcycle.get_engine_size())
+
+
+
+
+
 78.Create a parent class called "Person" with attributes name and age. Create a child class called "Employee" that inherits from the Person class and adds attributes such as position and salary.
+class Person:
+    def __init__(self,name, age):
+        self.name = name
+        self.age = age
+
+class Employee(Person):
+    def __init__(self, name, age,position,salary):
+        super().__init__(name, age)
+        self.position = position
+        self.salary = salary
+
+#Create an employee object
+employee = Employee("John Doe",30,"Software Engineer",10000)
+
+#Print the employee's name, age, position, and salary
+print("The employee's name is: ", employee.name)
+print("The employee's age is: ",employee.age)
+print("The employee's position is:",employee.position)
+print("The employee's salary is:",employee.salary)
+
+
 79.Create a parent class called "BankAccount" with attributes account number and balance. Create child classes called "CheckingAccount" and "SavingsAccount" that inherit from the BankAccount class and add specific methods for depositing and withdrawing money.
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.account_number = account_number
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            raise ValueError("Insufficient funds")
+        self.balance -= amount
+
+
+class CheckingAccount(BankAccount):
+    def __init__(self, account_number, balance, monthly_fee):
+        super().__init__(account_number, balance)
+        self.monthly_fee = monthly_fee
+
+    def withdraw(self, amount):
+        super().withdraw(amount)
+        self.balance -= self.monthly_fee
+
+
+class SavingsAccount(BankAccount):
+    def __init__(self, account_number, balance, interest_rate):
+        super().__init__(account_number, balance)
+        self.interest_rate = interest_rate
+
+    def earn_interest(self):
+        self.balance += self.balance * self.interest_rate
+
+
+# Create a checking account object
+checking_account = CheckingAccount("123456789", 1000, 10)
+
+# Deposit $500
+checking_account.deposit(500)
+
+# Withdraw $200
+checking_account.withdraw(200)
+
+# Print the checking account balance
+print("The checking account balance is:", checking_account.balance)
+
+# Create a savings account object
+savings_account = SavingsAccount("987654321", 500, 0.05)
+
+# Earn interest
+savings_account.earn_interest()
+
+# Print the savings account balance
+print("The savings account balance is:", savings_account.balance)
+
+
 
 #Iterators
 80.Create a custom iterator called "RangeIterator" that takes a start and end value and iterates over the range of values, returning each value.
+class RangeIterator:
+    def __init__(self, start, end):
+        self.start = start
+        self.end = end
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.start > self.end:
+            raise StopIteration
+        else:
+            value = self.start
+            self.start += 1
+            return value
+
+
+# Create a range iterator object
+range_iterator = RangeIterator(1, 10)
+
+# Iterate over the range iterator and print each value
+for value in range_iterator:
+    print(value)
+
+
 81.Implement a custom iterator called "FibonacciIterator" that generates the Fibonacci sequence and returns each number in the sequence.
+class FibonacciIterator:
+    def __init__(self, max_terms):
+        self.max_terms = max_terms
+        self.current_term = 0
+        self.previous_term = 1
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.current_term > self.max_terms:
+            raise StopIteration
+        else:
+            value = self.current_term
+            self.current_term, self.previous_term = self.previous_term + self.current_term, self.current_term
+            return value
+
+
+# Create a Fibonacci iterator object
+fibonacci_iterator = FibonacciIterator(10)
+
+# Iterate over the Fibonacci iterator and print each value
+for value in fibonacci_iterator:
+    print(value)
+
+
 82.Write a program that uses the built-in "iter" function to create an iterator for a list and iterate over its elements using a "for" loop.
+list_of_numbers = [1, 2, 3, 4, 5]
+
+# Create an iterator for the list
+iterator = iter(list_of_numbers)
+
+# Iterate over the iterator using a for loop
+for number in iterator:
+    print(number)
+
+
 83.Create a custom iterator called "FileLineIterator" that reads a text file and iterates over each line in the file, returning each line as a string.
 84.Implement a custom iterator called "PrimeIterator" that generates prime numbers and returns each prime number in the sequence.
 
 #Polymorphism
 85.Create a base class called "Shape" with a method called "area()". Create derived classes such as "Circle", "Rectangle", and "Triangle" that override the "area()" method to calculate the area specific to each shape. Use polymorphism to call the "area()" method on different shape objects.
 86.Create a base class called "Animal" with a method called "make_sound()". Create derived classes such as "Dog", "Cat", and "Cow" that override the "make_sound()" method to produce the sound specific to each animal. Use polymorphism to call the "make_sound()" method on different animal objects.
-87.Create a class called "Car" with a method called "drive()". Create derived classes such as "Sedan", "SUV", and "SportsCar" that override the "drive()" method to provide different driving experiences. Use polymorphism to call the "drive()" method on different car objects.
-88.Create a base class called "Shape" with a method called "draw()". Create derived classes such as "Circle", "Rectangle", and "Triangle" that override the "draw()" method to draw the shape on the screen using a graphics library. Use polymorphism to call the "draw()" method on different shape objects.
-89.Create a base class called "Employee" with a method called "calculate_salary()". Create derived classes such as "Manager", "Developer", and "Tester" that override the "calculate_salary()" method to calculate the salary based on the specific role. Use polymorphism to call the "calculate_salary()" method on different employee objects.
+class Animal:
+    def __init__(self, name):
+        self.name = name
 
+    def make_sound(self):
+        raise NotImplementedError("Make sound method not implemented in base class")
+
+
+class Dog(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def make_sound(self):
+        return "Woof!"
+
+
+class Cat(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def make_sound(self):
+        return "Meow!"
+
+
+class Cow(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def make_sound(self):
+        return "Moo!"
+
+
+# Create a dog object
+dog = Dog("Dog")
+
+# Print the sound made by the dog
+print(dog.make_sound())
+
+# Create a cat object
+cat = Cat("Cat")
+
+# Print the sound made by the cat
+print(cat.make_sound())
+
+# Create a cow object
+cow = Cow("Cow")
+
+# Print the sound made by the cow
+print(cow.make_sound())
+
+
+87.Create a class called "Car" with a method called "drive()". Create derived classes such as "Sedan", "SUV", and "SportsCar" that override the "drive()" method to provide different driving experiences. Use polymorphism to call the "drive()" method on different car objects.
+class Car:
+    def __init__(self, name, make):
+        self.name = name
+        self.make = make
+
+    def drive(self):
+        print(f"The {self.name} is driving.")
+
+
+class Sedan(Car):
+    def drive(self):
+        print(f"The {self.name} is driving smoothly.")
+
+
+class SUV(Car):
+    def drive(self):
+        print(f"The {self.name} is driving ruggedly.")
+
+
+class SportsCar(Car):
+    def drive(self):
+        print(f"The {self.name} is driving fast.")
+
+
+# Create a sedan object
+sedan = Sedan("Sedan", "Toyota")
+
+# Drive the sedan
+sedan.drive()
+
+# Create an SUV object
+suv = SUV("SUV", "Ford")
+
+# Drive the SUV
+suv.drive()
+
+# Create a sports car object
+sports_car = SportsCar("Sports Car", "Ferrari")
+
+# Drive the sports car
+sports_car.drive()
+
+
+
+88.Create a base class called "Shape" with a method called "draw()". Create derived classes such as "Circle", "Rectangle", and "Triangle" that override the "draw()" method to draw the shape on the screen using a graphics library. Use polymorphism to call the "draw()" method on different shape objects.
+import turtle
+
+class Shape:
+    def __init__(self, x, y, color):
+        self.x = x
+        self.y = y
+        self.color = color
+
+    def draw(self):
+        raise NotImplementedError("Draw method not implemented in base class")
+
+
+class Circle(Shape):
+    def __init__(self, x, y, radius, color):
+        super().__init__(x, y, color)
+        self.radius = radius
+
+    def draw(self):
+        turtle.penup()
+        turtle.goto(self.x, self.y)
+        turtle.pendown()
+        turtle.circle(self.radius)
+
+
+class Rectangle(Shape):
+    def __init__(self, x, y, width, height, color):
+        super().__init__(x, y, color)
+        self.width = width
+        self.height = height
+
+    def draw(self):
+        turtle.penup()
+        turtle.goto(self.x, self.y)
+        turtle.pendown()
+        turtle.forward(self.width)
+        turtle.right(90)
+        turtle.forward(self.height)
+        turtle.right(90)
+        turtle.forward(self.width)
+        turtle.right(90)
+        turtle.forward(self.height)
+
+
+class Triangle(Shape):
+    def __init__(self, x, y, base, height, color):
+        super().__init__(x, y, color)
+        self.base = base
+        self.height = height
+
+    def draw(self):
+        turtle.penup()
+        turtle.goto(self.x, self.y)
+        turtle.pendown()
+        turtle.forward(self.base / 2)
+        turtle.right(60)
+        turtle.forward(self.height)
+        turtle.right(120)
+        turtle.forward(self.base / 2)
+
+
+# Create a circle object
+circle = Circle(0, 0, 100, "red")
+
+# Draw the circle
+circle.draw()
+
+# Create a rectangle object
+rectangle = Rectangle(100, 100, 200, 100, "blue")
+
+# Draw the rectangle
+rectangle.draw()
+
+# Create a triangle object
+triangle = Triangle(200, 200, 100, 50, "green")
+
+# Draw the triangle
+triangle.draw()
+
+89.Create a base class called "Employee" with a method called "calculate_salary()". Create derived classes such as "Manager", "Developer", and "Tester" that override the "calculate_salary()" method to calculate the salary based on the specific role. Use polymorphism to call the "calculate_salary()" method on different employee objects.
+class Employee:
+    def __init__(self, name, role, experience):
+        self.name = name
+        self.role = role
+        self.experience = experience
+
+    def calculate_salary(self):
+        raise NotImplementedError("Calculate salary method not implemented in base class")
+
+
+class Manager(Employee):
+    def calculate_salary(self):
+        return 100000 + (self.experience * 1000)
+
+
+class Developer(Employee):
+    def calculate_salary(self):
+        return 80000 + (self.experience * 500)
+
+
+class Tester(Employee):
+    def calculate_salary(self):
+        return 60000 + (self.experience * 250)
+
+
+# Create a manager object
+manager = Manager("John Doe", "Manager", 10)
+
+# Calculate the manager's salary
+salary = manager.calculate_salary()
+
+# Print the manager's salary
+print(salary)
+
+# Create a developer object
+developer = Developer("Jane Doe", "Developer", 5)
+
+# Calculate the developer's salary
+salary = developer.calculate_salary()
+
+# Print the developer's salary
+print(salary)
+
+# Create a tester object
+tester = Tester("Jack Doe", "Tester", 2)
+
+# Calculate the tester's salary
+salary = tester.calculate_salary()
+
+# Print the tester's salary
+print(salary)

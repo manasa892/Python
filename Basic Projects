@@ -363,6 +363,7 @@ if len(temp_list1) == 0 or len(temp_list2)== 0:
     print("Please enter the values into the list")
 else:
     new_list = temp_list1 + temp_list2
+    new_list.sort()
     print("The merged list is as below","\n",new_list)
 
 

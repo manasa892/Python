@@ -393,11 +393,50 @@ if flag  == True:
 else:
     print("No,the element doesnot exist in the tuple.")
 
-32.Write a program to concatenate two tuples.
+                             (or)
+                             
+mytuple = ("apple","cherry","banana")
+n = input("Enter the element need to be searched: ")
+if n in mytuple:
+    print("element",n,"exists in the tuple")
+else:
+    print("element",n, "doesnot exist in the tuple") 
 
+
+
+32.Write a program to concatenate two tuples.
+mytuple1 = (1,23,4)
+mytuple2 = (4,7,8,9)
+
+if len(mytuple1) or len(mytuple2) != 0:
+    newtuple = mytuple1 + mytuple2
+    print(newtuple)
+else:
+    print("enter the values into the tuple")
+    
 
 33.Write a program to convert a tuple to a list.
+x = (1,2,3,4)
+y = list(x)
+print(y)
+
 34.Write a program to count the occurrences of a specific element in a tuple.
+mytuple1 = (1,23,4,4,5,6,7)
+n = int(input("Enter the element need to be searched: "))
+count = 0
+
+
+if len(mytuple1) != 0:
+    for num in mytuple1:
+        if num == n:
+            count = count + 1
+    
+if count > 0:
+    print(f"The element {n} occurs {count} times in the tuple.")
+else:
+    print(f"The element {n} does not exist in the tuple.")
+
+
 
 #SET CONCEPTS
 35.Write a program to find the union of two sets.

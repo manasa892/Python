@@ -16,3 +16,23 @@ madlib = f"Hi! My name is {name}.I woke up at {time1} to go to school, but schoo
     and a {noun1}. Then it was time for me to eat my go to breakfast which is a {noun2}. I then {verb} to school."
 
 print(madlib)
+
+2.Number Guessing , Make a program in which the computer randomly chooses a number between 1 to 10, 1 to 100,
+or any range. Then give users a hint to guess the number. Every time the user guesses wrong, he gets another clue, 
+and his score gets reduced. The clue can be multiples, divisible, greater or smaller, or a combination of all.
+
+import random
+
+comp = random.randint(0,10)
+
+player = int(input("Guess number between 0 - 10: "))
+while player != comp:
+    if player < comp:
+        print("Higher")
+        player = int(input("Guess number between 0-10: "))
+    
+    elif player > comp:
+        print("Lower")
+        player = int(input("Guess number between 0-10"))
+
+print("You got it")

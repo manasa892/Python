@@ -96,5 +96,30 @@ n = len(split_data)
 username = split_data[0]
 domain = split_data[1]
 
+5.Binary Search Algorithm
+import random
+
+lst = list(range(0,100,2))
+print(lst)
+search_ele = int(input("Enter the number to be searched: "))
+
+if lst:  # Check if the list is not empty
+    low = 0
+    high = len(lst) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+        if search_ele == lst[mid]:
+            print("Element found at index", mid)
+            break
+        elif search_ele < lst[mid]:
+            high = mid - 1
+        else:
+            low = mid + 1
+    else:
+        print("Element not found in the list")
+else:
+    print("List is empty")
+
 print("username is: ",username, " and the domain is: ",domain)
 

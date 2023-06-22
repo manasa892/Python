@@ -123,3 +123,37 @@ else:
 
 print("username is: ",username, " and the domain is: ",domain)
 
+#14.Word Game
+lst = ['car','benz car','maruthi suzuki','pulsar']
+i = 1 
+
+#Defining function to Check User Inputs
+def check_user_input(n):      
+    if not n.isalpha():
+        if n.isdigit():
+           print("Enter only alphabets")
+
+while i<=4:
+   choice = input("Guess the alphabet: ")
+   if check_user_input(choice):
+     break
+   else:
+    for word in lst: 
+        if choice in word:
+            print(f"The alphabet '{choice}' is present at the index position",word.index(choice))
+
+    if choice in word:
+        i=i+1
+    else:
+        i = i + 1
+
+word_ = input("Guess the word: ")
+if word_ in lst:
+   print("Congratulations, you have guessed the Word")
+else:
+   print("wrong word, Try again")
+
+
+
+
+

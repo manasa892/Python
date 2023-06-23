@@ -161,5 +161,15 @@ if (n%4 == 0 and (n%100 != 0 or n%400 ==0)):
 else:
     print("Not a Leap Year")
 
+#17.Spin a yarn
+#13.Spin a Yarn
+adj = input("Enter the adjective: ")
+prep = input("Enter the preposition: ")
+proper_noun = input("Enter the proper_noun: ")
+
+print("and your story is here")
+print("\n\n\n")
+data = f"kshdkalsjlajslsa kdhskhd hkashak kashk khsk {adj} hdhksaj kdsaksdsaj nkdnska {prep} nksank ndkasjnnoas sndaj {proper_noun}"
+print(data)
 
 

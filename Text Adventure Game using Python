@@ -1,0 +1,28 @@
+#Python Text Adventure Game
+answer = input("Do you want to play this text adevnture game? [yes/no] ")
+
+if answer == "yes":
+    print("That's great!")
+    print()
+    answer = input("Do you want to explore a cave or jungle! [cave/jungle]")
+
+    if answer == "cave":
+        print("You go into the cave and see a sleeping bear")
+        print()
+        answer = input("Do you want to fight or run? [fight/run]")
+
+        if answer == "fight":
+            print("Bears are really strong! You lose!")
+        elif answer == "run":
+            print("You ran away! You win!")
+        else:
+            print("Invalid option, you lose!")
+    elif answer == "Jungle":
+        print("You meet a Tiger and you get eaten! You lose!")
+
+    else:
+        print("Invalid option, you lose!")
+
+
+else:
+    print("But this is a really Awesome Game!")

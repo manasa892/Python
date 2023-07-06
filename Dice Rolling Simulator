@@ -1,0 +1,21 @@
+#Dice Rolling Simulator
+import random
+numList= [1,2,3,4,5,6]
+
+ask = input("Please roll the dice:[Yes/no] ")
+ele=0
+def con(a):
+     while True:
+          ask = input("Would you like to roll the dice again: [Yes/No] ")
+
+          if (ask=="yes"):
+               print(random.choice(numList))
+          else:
+               print("Its a good try!")
+               break
+
+if(ask == "yes"):
+        print(random.choice(numList))
+        con(ele)
+else:
+    print("Its a good game, you can give a try!")

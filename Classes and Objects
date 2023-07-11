@@ -1,0 +1,29 @@
+#In Class, variables are called Attributes and Behavious (or) Functions are called Methods
+# Objects will have Attribute and Behaviour
+#"__init__" is a special method, for every object it get called once
+# Each object will have its own methods and variables
+
+class Computer:
+
+    def __init__(self,cpu,ram): #cpu, ram is an argument
+        self.cpu = cpu  
+        self.ram = ram 
+
+    def config(self): #Method
+        print("Config is",self.cpu,self.ram) 
+
+    def config1(self): #Method
+        print("Wear your failure as a badge of honour.")
+
+    def config_new(self): #Method
+        print(self.cpu, self.ram)
+
+
+com1 = Computer('i5',16)  #Object1 cpu = i5, ram = 16
+com2 = Computer('Ryzen 3',8)  #Object2 cpu = Ryzen, ram = 8
+com3 = Computer("Sundar","Pichai")
+
+Computer.config(com1)  #Calling Class by Object
+Computer.config1(com2)  
+
+com3.config_new() #Calling Object

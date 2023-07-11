@@ -1,0 +1,48 @@
+def person(name, **data):
+    print(name)
+    print(data)
+
+person('navin',age=20,city='Mumbai',mob = 898928399)
+
+#using multiple variables
+def person(name, **data):
+    print(name)
+    for i,j in data.items():
+        print(i,j)
+
+person('navin',age=28,city='mumbai',mob=9898987878)
+
+#Local variable and global variable
+a = 10
+def something():
+    a = 15
+
+    print("in fun",a)
+
+something()
+
+print("outside",a)
+
+#global variable
+a = 10
+def something():
+    global a
+    a = 15
+    print("in func",a)
+
+something()
+
+#using both local and global variable
+a = 10
+print(id(a))
+
+def something():
+    a = 9
+
+    x = globals()['a']
+    print(id(x))
+    print("in func", a)
+
+    globals()['a'] = 15
+
+something()

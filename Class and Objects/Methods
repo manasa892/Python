@@ -1,0 +1,43 @@
+#There are three types of Methods - Instance Method, Class Method, Static Method
+# Two Types of Instance method, Accessor method (Fetches values of Instance variable) and Mutator method (If we need to modify the variable we use Mutator methods)
+
+#Program 01
+class Student:
+
+    school = 'Telusko'
+
+    def __init__(self,m1,m2,m3):
+        self.m1 = m1 #Instance variable
+        self.m2 = m2 #Instance variable
+        self.m3 = m3 #Instance Variable
+
+    def avg(self): #Method
+        return(self.m1 + self.m2 + self.m3)/3
+    
+
+    #Instance Methods
+    def get_m1(self):
+        return self.m1
+    
+    def set_m2(self,value):
+        self.m1 = value
+
+    #Class Methods can be used to access class variables
+    @classmethod
+    def getSchool(cls):
+        return cls.school
+    
+    @staticmethod #Static Method does nothing with the class or variables, additionally need to be specified anything we use it
+    def info():
+        print("This is Student class... in abc module")
+
+s1 = Student(34,67,32) #Object
+s2 = Student(89,32,12) #Object
+
+print(s1.avg()) #printing avg by calling object
+print(s2.avg()) #printing avg by calling object
+print(s1.get_m1())
+print(Student.getSchool()) #We are calling a class method
+Student.info()  
+
+

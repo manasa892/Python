@@ -2,7 +2,7 @@
 # Objects will have Attribute and Behaviour
 #"__init__" is a special method, for every object it get called once
 # Each object will have its own methods and variables
-
+#Program 01
 class Computer:
 
     def __init__(self,cpu,ram): #cpu, ram is an argument
@@ -27,3 +27,19 @@ Computer.config(com1)  #Calling Class by Object
 Computer.config1(com2)  
 
 com3.config_new() #Calling Object
+
+#Everytime object is created it is allocated to a new space
+#Program 02
+class Computer:
+    pass
+
+c1 = Computer() #Object 
+c2 = Computer() #Object
+
+
+print(id(c1))
+print(id(c2))
+
+
+
+

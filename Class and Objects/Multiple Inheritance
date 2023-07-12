@@ -1,0 +1,26 @@
+#A class can be derived from more than one superclass in Python. This is called multiple inheritance
+class A:
+    def feature1(self):
+        print("Feature 1 is working")
+
+    def feature2(self):
+        print("Feature 2 is working")
+
+class B:
+    def feature3(self):
+        print("Feature 3 is working")
+
+    def feature4(self):
+        print("Feature 4 is working")
+
+class C(A,B):
+    def feature5(self):
+        print("Feature 5 is working")
+
+a1 = A()
+b1 = B()
+c1 = C()
+
+a1.feature1() #can access only class A features
+b1.feature4() #can access only class B features
+c1.feature1() #We can observe c1 object of class C can access all the features from both Class A and B i.e is inheriting both a and b class

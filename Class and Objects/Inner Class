@@ -1,0 +1,32 @@
+#Class within a class is called Inner Class
+class Student:
+
+    def __init__(self,name,rollno): #Method
+        self.name = name  #Variable
+        self.rollno = rollno #Variable
+        self.lap = self.Laptop()
+
+
+    def show(self):
+        print(self.name,self.rollno)
+        self.lap.show()
+
+    class Laptop:
+        def __init__(self):
+            self.brand = 'HP'
+            self.cpu = 'i5'
+            self.ram = 8
+
+        def show(self):
+            print(self.brand,self.cpu,self.ram)
+
+s1 = Student('Navin',2) #Object
+s2 = Student('Jenny',3) #Object
+
+s1.show() #Calling Object
+
+lap1 = s1.lap #For every object you will get different laptop object
+lap2 = s2.lap
+
+print(id(lap1))
+print(id(lap2))

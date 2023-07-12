@@ -1,3 +1,7 @@
+# Constructor Method
+# Super method 
+# Method Resolution Order
+
 class A:
     def __init__(self): #Constructor
         print("in a Init")
@@ -10,7 +14,7 @@ class A:
 
 class B(A): #Subclass
     def __init__(self): #Constructor
-        super().__init__() #when you create a object of sub class it will call init of sub class first
+        super().__init__() #when you create a object of super class it will call init of sub class first
         print("in B init")
 
     def feature3(self):

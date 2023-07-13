@@ -1,0 +1,40 @@
+'''
+
+Given an unsorted integer array, find a pair with the given sum in it.
+
+• Each input can have multiple solutions. The output should match with either one of them.
+
+Input : nums[] = [8, 7, 2, 5, 3, 1], target = 10
+Output: (8, 2) or (7, 3)
+
+• The solution can return pair in any order. If no pair with the given sum exists, the solution should return an empty tuple.
+
+Input : nums[] = [5, 2, 6, 8, 1, 9], target = 12
+Output: ()
+
+'''
+
+nums = [5,2,6,8,3,9]
+target = 12
+count = 0
+i = 0
+j = 1
+new_arr = ()
+new_tup = []
+nl = len(nums)
+
+
+for i in range(0,nl):
+    for j in range(1,nl):
+        count = nums[i] + nums[j]
+        if(count == target):
+            new_arr = (nums[i],nums[j])
+            new_tup.append(new_arr)
+        else:
+            j+1
+            i+1
+            
+print(new_tup)
+
+// How to initiate j to start iterate from second element
+// write a condition not to print same tuple again and again (9,3) or (3,9)

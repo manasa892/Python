@@ -14,27 +14,31 @@ Output: ()
 
 '''
 
-nums = [5,2,6,8,3,9]
-target = 12
-count = 0
-i = 0
-j = 1
-new_arr = ()
-new_tup = []
-nl = len(nums)
+#Naive method to find a pair in a list with the given sum
+def findpair(nums, target):
+    new_tup = []
+    new_arr = ()
+    #consider each element except the last
+    for i in range(len(nums) - 1):
 
+        #start from the i'th element until the last element
+        for j in range(i+1,len(nums)):
 
-for i in range(0,nl):
-    for j in range(1,nl):
-        count = nums[i] + nums[j]
-        if(count == target):
-            new_arr = (nums[i],nums[j])
-            new_tup.append(new_arr)
-        else:
-            j+1
-            i+1
+            #if the desired sum is found, print it 
+            if nums[i] + nums[j] == target:
+                new_arr = (nums[i],nums[j])
+                new_tup.append(new_arr)
             
-print(new_tup)
+    
+    
+    if (new_tup == []):
+        print("Pair not found")
+    else:
+        print(new_tup,"is the pair of elements found")
 
-// How to initiate j to start iterate from second element
-// write a condition not to print same tuple again and again (9,3) or (3,9)
+
+if __name__ == '__main__':
+    nums = [2,3,5,7,8]
+    target = 10
+
+    findpair(nums,target)

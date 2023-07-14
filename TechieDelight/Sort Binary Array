@@ -1,0 +1,73 @@
+'''
+
+Given a binary array, in-place sort it in linear time and constant space. The output should contain all zeroes, followed by all ones.
+
+Input : [1, 0, 1, 0, 1, 0, 0, 1]
+Output: [0, 0, 0, 0, 1, 1, 1, 1]
+
+Input : [1, 1]
+Output: [1, 1]
+
+'''
+
+class Solution:
+    def __init__(self, input_array):
+        self.input_array = input_array
+
+    def sort_binary_array(self):
+        zeros_array = []
+        ones_array = []
+
+        for i in self.input_array:
+            if i == 0:
+                zeros_array.append(i)
+            else:
+                ones_array.append(i)
+
+        sorted_binary_array = zeros_array + ones_array
+        return sorted_binary_array
+
+
+input_array = [1, 0, 1, 0, 1, 0, 0, 1]
+binary_sorter = Solution(input_array)
+sorted_array = binary_sorter.sort_binary_array()
+print(sorted_array)
+
+
+                                  (or)
+
+def sort_binary_array(input_array):
+    zeros_array = []
+    ones_array = []
+
+    for i in input_array:
+        if i == 0:
+            zeros_array.append(i)
+        else:
+            ones_array.append(i)
+
+    sorted_binary_array = zeros_array + ones_array
+    return sorted_binary_array
+
+input_array = [1, 0, 1, 0, 1, 0, 0, 1]
+sorted_array = sort_binary_array(input_array)
+print(sorted_array)
+
+                                (or)
+
+
+input_array = [1,0,1,0,1,0,0,1]
+Zeros_array =[]
+ones_array=[]
+sorted_binary_array = []
+
+for i in input_array:
+    if (i==0):
+        Zeros_array.append(i)
+    else:
+        ones_array.append(i)
+
+
+
+sorted_binary_array = Zeros_array + ones_array
+print(sorted_binary_array)
